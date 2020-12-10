@@ -1,1 +1,7 @@
-
+<!--
+In CoreDNS, an optional feature called [autopath](https://coredns.io/plugins/autopath) can be enabled that will cause this search path to be followed
+*in the server*. That is, CoreDNS will figure out from the source IP address which namespace the client pod is in,
+and it will walk this search list until it gets a valid answer. Since the first 3 of these are resolved internally
+within CoreDNS itself, it cuts out all of the back and forth between the client and server, reducing latency.
+--->
+hahaha
